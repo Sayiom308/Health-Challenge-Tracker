@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  @apply bg-gray-100 text-gray-900 font-sans;
+}
+
+/* Form Styling */
+.input-field {
+  @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.button-primary {
+  @apply bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-all;
+}
+
+/* Table Styling */
+.table-container {
+  @apply w-full overflow-x-auto;
+}
+
+.table {
+  @apply w-full border-collapse bg-white shadow-md rounded-lg;
+}
+
+.table th {
+  @apply p-3 bg-gray-300 text-gray-700;
+}
+
+.table td {
+  @apply p-3 border;
+}
+
+/* Pagination */
+.pagination {
+  @apply flex justify-center space-x-2 mt-4;
+}
+
+.pagination button {
+  @apply bg-gray-300 px-3 py-1 rounded hover:bg-gray-400;
+}
+
+/* Utility Classes */
+.card {
+  @apply p-4 bg-white rounded shadow-md;
+}
+

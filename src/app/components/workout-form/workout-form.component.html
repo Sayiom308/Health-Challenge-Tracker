@@ -1,0 +1,10 @@
+<div class="p-4 bg-gray-100 rounded-lg shadow-md">
+    <h2 class="text-lg font-bold">Add Workout</h2>
+    <input type="text" [(ngModel)]="userName" placeholder="User Name" class="p-2 border rounded w-full my-2">
+    <select [(ngModel)]="workoutType" class="p-2 border rounded w-full my-2">
+      <option *ngFor="let type of workoutTypes" [value]="type">{{ type }}</option>
+    </select>
+    <input type="number" [(ngModel)]="minutes" placeholder="Minutes" class="p-2 border rounded w-full my-2">
+    <button (click)="addWorkout()" class="bg-blue-500 text-white p-2 rounded w-full">Add Workout</button>
+  </div>
+  
